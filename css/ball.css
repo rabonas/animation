@@ -1,0 +1,53 @@
+.suport {
+    position: absolute;
+    bottom: 0%;
+    width: 98%;
+    text-align: center;
+}
+
+.smash {
+    animation: smash 1s alternate infinite ease-in-out bottom;
+}
+
+.shadow, .rotateimg {
+    border-radius: 50%;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+.shadow {
+    animation: shadow 1s alternate ease-out infinite;
+}
+
+.rotateimg {
+    background: url(../img/basketball.png);
+    background-size: 100%;
+    animation: ball 6s infinite linear;
+}
+
+@keyframes shadow {
+    0%{
+        transform: translateY(0);
+        box-shadow: 20px 20px 10px #444466;
+    }
+    100%{
+        transform: translateY(-350px);
+        box-shadow: 20px 350px 250px #444466;
+    }
+}
+
+@keyframes smash {
+    0%{
+        transform: scaleY(0.7);
+    }
+    15%{
+        transform: scaleY(1)
+    }
+}
+
+@keyframes ball {
+    100%{
+        transform: rotate(360deg);
+    }
+}

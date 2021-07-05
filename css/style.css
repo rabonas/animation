@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url(../img/kartinka.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rain {
+    height: 100vh;
+    background: url(https://i.postimg.cc/MKgprHJg/rain.png);
+    animation: rain 0.3s linear infinite;
+}
+
+@keyframes rain {
+    0% {background-position: 0px 0px;}
+    100% {background-position: 150px 400px;}
+}

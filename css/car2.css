@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    background: linear-gradient(to top, grey 0%, grey 1%, lightgray 100%);
+}
+
+.drive {
+    height: 60vh;
+    width: 200vh;
+    margin: 100px auto;
+    position: relative;
+    overflow-x: hidden;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+}
+
+.road {
+    height: 350px;
+    width: 510%;
+    background: url(../img/hgfAKB.png);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: repeat-x;
+    animation: road 6s linear infinite;
+}
+
+.car {
+    position: relative;
+    top: 100px;
+    animation: car 1s linear infinite;
+}
+
+.tire {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: tire 3s linear infinite;
+}
+
+.first {
+    top: 86px;
+    left: 57px;
+}
+
+.second {
+    top: 88px;
+    left: 460px;
+}
+
+@keyframes road {
+    100% {transform: translateX(-2950px);}
+}
+
+@keyframes tire {
+   100%{transform: rotate(360deg);}
+}
+
+@keyframes car {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+
+}
