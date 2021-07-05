@@ -70,3 +70,9 @@ body {
     }
 
 }
+
+.link a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}

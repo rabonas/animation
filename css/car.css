@@ -7,7 +7,7 @@ body {
 .night {
     height: 80vh;
     width: 200vh;
-    margin: 5rem auto;
+    margin: 5rem auto 2rem;
     background: url(../img/Img_1.png);
     background-size: cover;
     position: relative;
@@ -54,4 +54,10 @@ body {
         transform: translateY(-1px);
     }
 
+}
+
+.link a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
 }
